@@ -21,11 +21,9 @@ function testReturnsNotesList() {
 }
 
 function testViewNotes() {
-  var noteList = new NoteList();
-  var noteListView = new NoteListView(noteList);
-  noteList.addNote("this is the first note");
-  noteList.addNote("this is the second note");
-  var arr = noteList.getNotes();
+  var noteListView = new NoteListView();
+  noteListView.noteList.addNote("this is the first note");
+  noteListView.noteList.addNote("this is the second note");
   var str = noteListView.viewNotes();
   assert.isTrue(str === "<ul><li>this is the first note</li><li>this is the second note</li></ul>");
 }
