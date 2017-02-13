@@ -12,5 +12,11 @@ function testReturnsNoteText() {
   note.setText("this is the first note");
   assert.isTrue(note.getText() === "this is the first note");
 }
-
+function testReturnsNotesList() {
+  var noteList = new NoteList();
+  noteList.addNote("this is the first note");
+  var arr = noteList.getNotes();
+  assert.isTrue(arr[0].getText() === "this is the first note");
+}
 testReturnsNoteText();
+testReturnsNotesList();

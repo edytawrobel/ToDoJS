@@ -1,0 +1,9 @@
+#main {
+  font-family: Ubuntu, san-serif;
+  color: #36a098;
+  margin: 10px auto 0px auto;
+  border: 1px solid black;
+  width: 500px;
+  min-height: 300px;
+  padding: 10px;
+}
